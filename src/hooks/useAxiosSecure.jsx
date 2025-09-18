@@ -2,8 +2,10 @@ import axios from "axios";
 import { useNavigate } from "react-router";
 import useAuth from "./useAuth";
 
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
 const axiosSecure = axios.create({
-    baseURL: 'https://rrb-pethouse-backend-56hvo020v-rutiks-projects-89d24b47.vercel.app'
+    baseURL: BASE_URL
     // baseURL: 'https://RRB-pet-server.vercel.app'
 });
 
